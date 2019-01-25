@@ -1,0 +1,43 @@
+<html>
+<main>
+<head>
+<title></title>
+<style type="text/css">
+.nav-link{
+  color="red";
+  font-family="arial";
+}
+</style>
+</head>
+<body>
+<header>
+	<h1 id="header">Product landing page</h1>
+  <img id="header-img" src="https://image.freepik.com/vector-gratis/logo-petalos-colores_23-2147512171.jpg>
+  <nav id="nav-bar">
+    <a href="Productos" class="nav-link"></a>
+    <a href="Contacto" class="nav-link"></a>
+    <a href="Direccion" class="nav-link"></a>
+  </nav>
+</header>
+<div>
+		<h2 id="Productos">Catálogo de productos</h2>
+    <video>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+</div>
+<div>
+    <h2 id="Contacto">Ingrese su información para contacto</h2>
+    <form id="form">
+      Ingrese su mail:<br>
+      <input type="text" name="email" value="example@email.com"></br>
+    </form>
+</div>
+<div>
+    <h2 id="Direccion">Encuéntrenos en la siguiente ubicación</h2>
+</div>
+<footer>
+</footer>
+</div>	
+</body>
+</main>
+</html>
