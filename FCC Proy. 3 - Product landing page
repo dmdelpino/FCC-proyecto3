@@ -1,35 +1,82 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <html>
 <main>
 <head>
 <title></title>
 <style type="text/css">
 .nav-link{
-  color="red";
-  font-family="arial";
+  color: red;
+  font-family: sans-serif;
+}
+#nav-bar{
+  position: fixed;
+  top: 0px;  
+}
+.tabla{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.producto{
+  color: red;
+}
+.precio{
+  color: green;
+}
+.fila1{
+  color: blue;
+  background-color: yellow;
+}
+.fila2{
+  color: grey;
+  background-color: orange;
+}
+.fila3{
+  color: blue;
+  background-color: yellow;
+}
+.fila4{
+  color: grey;
+  background-color: orange;
+}
+@media (max-height: 250px) {
+  #header{
+    color: red;
+  }
 }
 </style>
 </head>
 <body>
-<header>
-	<h1 id="header">Product landing page</h1>
-  <img id="header-img" src="https://image.freepik.com/vector-gratis/logo-petalos-colores_23-2147512171.jpg>
+<header id="header">
+	<h1 id="titulo">Productos de Ratita SRL</h1>
+  <img id="header-img" alt="logo" src="https://image.freepik.com/vector-gratis/logo-petalos-colores_23-2147512171.jpg">
   <nav id="nav-bar">
-    <a href="Productos" class="nav-link"></a>
-    <a href="Contacto" class="nav-link"></a>
-    <a href="Direccion" class="nav-link"></a>
+    <a href="#Productos" class="nav-link">Productos</a>
+    <a href="#Contacto" class="nav-link">Contacto</a>
+    <a href="#Direccion" class="nav-link">Dirección</a>
   </nav>
 </header>
 <div>
 		<h2 id="Productos">Catálogo de productos</h2>
-    <video>
+    <video id="video">
       <source src="video.mp4" type="video/mp4">
     </video>
+    <div class="tabla">
+      <div class="producto">Producto</div>
+      <div class="precio">Valor</div>
+      <div class="fila1">Mesa</div>
+      <div class="fila2">100</div>
+      <div class="fila3">Silla</div>
+      <div class="fila4">50</div>
+    </div>
 </div>
 <div>
     <h2 id="Contacto">Ingrese su información para contacto</h2>
-    <form id="form">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
       Ingrese su mail:<br>
-      <input type="text" name="email" value="example@email.com"></br>
+      <input type="email" id="email" name="email" placeholder="example@email.com"></br>
+      <input type="submit" id="submit" value="Enviar"></br>
     </form>
 </div>
 <div>
